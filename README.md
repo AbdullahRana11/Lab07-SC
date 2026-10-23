@@ -15,17 +15,6 @@ The goal of the problem set is to build a small toolbox that extracts informatio
 - `guessFollowsGraph()` infers who follows whom, based on @-mentions in tweets.
 - `influencers()` returns the users sorted by how many followers they have.
 
-## Project structure
-Lab 7/
-├── ps1/ Eclipse project (problem set 1)
-│ └── src/twitter/
-│ ├── SocialNetwork.java implementation
-│ ├── SocialNetworkTest.java JUnit 4 tests
-│ ├── Main.java runs the program on sample tweets
-│ └── ... other files from the problem set
-└── __MACOSX/ folder created by the zip file (not needed)
-
-
 ## Testing strategy
 
 The tests follow input/output space partitioning. For `guessFollowsGraph()` the input is partitioned on the number of tweets, the number of mentions, the number of authors, and the case of usernames. For `influencers()` the input is partitioned on the number of users, the number of followers, and whether follower counts are equal. Every test is small and uses hand-written tweets, so a failure is easy to understand.
